@@ -8,11 +8,11 @@
 8. Added convertion images to the WebP
 9. Eliminated render-blocking resources by preloading critical fonts, using crossorigin for preloaded fonts from different origins, combined Google Fonts requests and defered non-critical CSS or inline critical styles in the `<head>`
 
-Create /server folder
-Setup basic ExpressJS app, https://expressjs.com/en/starter/static-files.html 
-Server should serve built version of the FE app
-Add Gzip or Brotli compression
-Add Etags headers, https://expressjs.com/en/api.html 
-Add pm2 setup to run in production
-* Add endpoint to store data submitted via reservations form
-* Save data in text file or SQLite
+Inside the /server folder, create a file (server.js) and set up your ExpressJS app.
+install compression and add it in the server
+add ETags to server
+Install pm2 globally
+start your app with pm2
+implement the logic to store the data
+install sqlite3
+set up SQLite to store reservation data
